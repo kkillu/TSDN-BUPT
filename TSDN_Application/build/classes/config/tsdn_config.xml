@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tsdnconfig>
+	<serveradd>https://172.19.39.21:8443</serveradd> <!-- tsdn server ip address -->
+    <username>root</username>
+    <password>Changeme_123</password>
+</tsdnconfig>

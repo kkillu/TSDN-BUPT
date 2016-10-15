@@ -1,0 +1,206 @@
+ 
+<!-- tsdn server ip address -->
+<serveradd>https://172.19.39.21:8443</serveradd> 
+<username>root</username>
+<password>Changeme_123</password>
+ 
+ 
+1) delete : https://172.19.39.21:8443/netdata/ethsvrs/1.4/154.json
+body :  
+reponse body :  {}
+
+
+2) PUT :https://172.19.39.21:8443/netdata/ethsvrs/1.4/154.json
+
+BODY:
+{
+  "srv_list": [
+    {
+      "srv_type": 1,
+      "srv_name": "BoD_Eth_Service",
+      "sla": 3,
+      "bw": 1000000,
+      "pir": 1000000,
+      "srv_id": 131
+    }
+  ]
+}
+
+
+reponse body : {}
+
+ 
+
+3)  post : https://172.19.39.21:8443/netdata/ethsvrs/1.4/ethsvrs.json
+body: 
+
+{
+  "srv_list": [
+    {
+      "srv_type": 1,
+      "srv_name": "BoD_Eth_Service",
+      "sla": 3,
+      "bw": 100000,
+      "pir": 0,
+      "uni": [
+        {
+          "type": 0,
+          "ne_id": 589855,
+          "physical_port": {
+            "shelf_id": 0,
+            "board_id": 3,
+            "sub_card_id": 0,
+            "port_id": 1
+          }
+        },
+        {
+          "type": 0,
+          "ne_id": 589859,
+          "physical_port": {
+            "shelf_id": 0,
+            "board_id": 3,
+            "sub_card_id": 0,
+            "port_id": 2
+          }
+        }
+      ]
+    }
+  ]
+}
+
+reponse body :
+
+{
+  "srv_list": [
+    {
+      "srv_type": 1,
+      "status": 2,
+      "admin_status": 1,
+      "real_create": "2016-06-16 12:08:54",
+      "uni": [
+        {
+          "tags": [],
+          "type": 0,
+          "ne_id": 589855,
+          "physical_port": {
+            "shelf_id": 0,
+            "board_id": 3,
+            "sub_card_id": 0,
+            "port_id": 1
+          }
+        },
+        {
+          "tags": [],
+          "type": 0,
+          "ne_id": 589859,
+          "physical_port": {
+            "shelf_id": 0,
+            "board_id": 3,
+            "sub_card_id": 0,
+            "port_id": 2
+          }
+        }
+      ],
+      "nni": [
+        {
+          "ne_id": 589855,
+          "link_id": 52,
+          "label": 741736448,
+          "underlay_svr_type": 1,
+          "underlay_svr_id": {
+            "ingress": 589855,
+            "egress": 589859,
+            "index": 6
+          },
+          "nni_type": 1,
+          "underlay_svr_lsp_type": 1,
+          "work_status": 1
+        }
+      ],
+      "srv_id": 131,
+      "srv_name": "BoD_Eth_Service",
+      "sla": 3,
+      "bw": 100000,
+      "pir": 100000,
+      "act_bw": 100000,
+      "latency": 144,
+      "etag": 3,
+      "eth_oam": {
+        "md": "SDN1",
+        "ma": "1",
+        "mep": 6888,
+        "rmep": 6899
+      }
+    }
+  ]
+}
+
+
+4) get https://172.19.39.21:8443/netdata/ethsvrs/1.4/service_eth_detail.json?srv_type=1
+
+reponse body :
+
+{
+  "srv_list": [
+    {
+      "srv_type": 1,
+      "status": 2,
+      "admin_status": 1,
+      "real_create": "2016-06-15 19:49:01",
+      "uni": [
+        {
+          "tags": [],
+          "type": 0,
+          "ne_id": 589855,
+          "physical_port": {
+            "shelf_id": 0,
+            "board_id": 3,
+            "sub_card_id": 0,
+            "port_id": 1
+          }
+        },
+        {
+          "tags": [],
+          "type": 0,
+          "ne_id": 589859,
+          "physical_port": {
+            "shelf_id": 0,
+            "board_id": 3,
+            "sub_card_id": 0,
+            "port_id": 2
+          }
+        }
+      ],
+      "nni": [
+        {
+          "ne_id": 589855,
+          "link_id": 52,
+          "label": 741736448,
+          "underlay_svr_type": 1,
+          "underlay_svr_id": {
+            "ingress": 589855,
+            "egress": 589859,
+            "index": 6
+          },
+          "nni_type": 1,
+          "underlay_svr_lsp_type": 1,
+          "work_status": 1
+        }
+      ],
+      "srv_id": 131,
+      "srv_name": "BoD_Eth_Service",
+      "sla": 3,
+      "bw": 100000,
+      "pir": 100000,
+      "act_bw": 100000,
+      "latency": 144,
+      "etag": 3,
+      "eth_oam": {
+        "md": "SDN1",
+        "ma": "1",
+        "mep": 6888,
+        "rmep": 6899
+      }
+    }
+  ]
+}

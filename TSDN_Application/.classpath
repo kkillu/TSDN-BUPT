@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="build/sun.misc.BASE64Decoder.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java.jar"/>
+	<classpathentry kind="lib" path="build/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="build/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="build/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="build/commons-logging.jar"/>
+	<classpathentry kind="lib" path="build/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="build/commons-lang-2.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Java JDK VM 1.7.0_u45 Windows">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

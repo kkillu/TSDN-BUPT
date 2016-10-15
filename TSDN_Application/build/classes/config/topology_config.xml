@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<topologyconfig>
+	<neconfig>
+		<neid>589855</neid>
+		<nename>OSN9800[E_1]</nename>
+		<ports>
+			<port>0-3-1</port>
+			<port>0-3-2</port>
+		</ports>
+	</neconfig>
+
+	<neconfig>
+		<neid>589857</neid>
+		<nename>OSN9800[E_2]</nename>
+		<ports>
+			<port>0-3-1</port>
+			<port>0-3-2</port>		
+		</ports>
+	</neconfig>
+
+	<neconfig>
+		<neid>589859</neid>
+		<nename>OSN9800[E_3]</nename>
+		<ports>
+			<port>0-3-1</port>
+            <port>0-3-2</port>        
+		</ports>
+	</neconfig>	
+</topologyconfig>

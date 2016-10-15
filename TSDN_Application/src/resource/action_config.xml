@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="ethsrv" namespace="/" extends="default">
+
+        <action name="ethSummary" >
+            <result name="success">/jsp/bod_view.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="bod_config" class="com.huawei.tsdn.sampleapp.ethsrv.action.EthSrvActionSupport">
+            <result name="success">/jsp/bod.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        
+         <action name="fancy_box" >
+            <result name="success">/jsp/event.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+		<action name="dayclick">
+            <result name="success">/jsp/dayclick.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        
+        <action name="eth_*" class="com.huawei.tsdn.sampleapp.ethsrv.action.EthSrvActionSupport" method="{1}">
+            <result name="success">/jsp/bod.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        
+
+    </package>
+</struts> 
